@@ -16,5 +16,85 @@ namespace KinshipCalculator
         {
             InitializeComponent();
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void but14_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void but13_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void but12_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void but11_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void but10_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void but9_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void but8_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void but7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void but6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void but5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void but4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void but3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void but2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
