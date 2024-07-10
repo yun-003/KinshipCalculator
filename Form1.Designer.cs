@@ -1,7 +1,7 @@
 ﻿
 namespace KinshipCalculator
 {
-    partial class Form1
+    partial class KinshipCalculator
     {
         /// <summary>
         /// 必需的设计器变量。
@@ -30,7 +30,7 @@ namespace KinshipCalculator
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.input = new System.Windows.Forms.Label();
             this.but1 = new System.Windows.Forms.Button();
             this.but2 = new System.Windows.Forms.Button();
             this.but3 = new System.Windows.Forms.Button();
@@ -45,44 +45,43 @@ namespace KinshipCalculator
             this.but11 = new System.Windows.Forms.Button();
             this.but10 = new System.Windows.Forms.Button();
             this.but9 = new System.Windows.Forms.Button();
-            this.label3 = new System.Windows.Forms.Label();
+            this.output = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
             // 
+            this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.SystemColors.Control;
             this.label1.Font = new System.Drawing.Font("华文中宋", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label1.Location = new System.Drawing.Point(156, 24);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.ForeColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.label1.Location = new System.Drawing.Point(180, 35);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(396, 60);
+            this.label1.Size = new System.Drawing.Size(198, 41);
             this.label1.TabIndex = 0;
-            this.label1.Text = "亲戚称呼计算器";
+            this.label1.Text = "称呼计算器";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
-            // label2
+            // input
             // 
-            this.label2.BackColor = System.Drawing.SystemColors.Control;
-            this.label2.Font = new System.Drawing.Font("宋体", 22.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label2.Location = new System.Drawing.Point(37, 145);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(660, 242);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "label2";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.BottomRight;
-            this.label2.Click += new System.EventHandler(this.label2_Click);
+            this.input.BackColor = System.Drawing.SystemColors.Control;
+            this.input.Font = new System.Drawing.Font("宋体", 22.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.input.Location = new System.Drawing.Point(28, 109);
+            this.input.Name = "input";
+            this.input.Size = new System.Drawing.Size(495, 182);
+            this.input.TabIndex = 1;
+            this.input.Text = "我";
+            this.input.TextAlign = System.Drawing.ContentAlignment.BottomRight;
+            this.input.Click += new System.EventHandler(this.label2_Click);
             // 
             // but1
             // 
             this.but1.BackColor = System.Drawing.Color.White;
             this.but1.Font = new System.Drawing.Font("宋体", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.but1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.but1.Location = new System.Drawing.Point(32, 485);
-            this.but1.Margin = new System.Windows.Forms.Padding(4);
+            this.but1.Location = new System.Drawing.Point(24, 364);
             this.but1.Name = "but1";
-            this.but1.Size = new System.Drawing.Size(143, 95);
+            this.but1.Size = new System.Drawing.Size(107, 71);
             this.but1.TabIndex = 2;
             this.but1.Text = "AC";
             this.but1.UseVisualStyleBackColor = false;
@@ -92,10 +91,9 @@ namespace KinshipCalculator
             // 
             this.but2.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.but2.Font = new System.Drawing.Font("宋体", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.but2.Location = new System.Drawing.Point(202, 485);
-            this.but2.Margin = new System.Windows.Forms.Padding(4);
+            this.but2.Location = new System.Drawing.Point(152, 364);
             this.but2.Name = "but2";
-            this.but2.Size = new System.Drawing.Size(143, 95);
+            this.but2.Size = new System.Drawing.Size(107, 71);
             this.but2.TabIndex = 5;
             this.but2.Text = "C";
             this.but2.UseVisualStyleBackColor = false;
@@ -105,89 +103,82 @@ namespace KinshipCalculator
             // 
             this.but3.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.but3.Font = new System.Drawing.Font("宋体", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.but3.Location = new System.Drawing.Point(378, 485);
-            this.but3.Margin = new System.Windows.Forms.Padding(4);
+            this.but3.Location = new System.Drawing.Point(284, 364);
             this.but3.Name = "but3";
-            this.but3.Size = new System.Drawing.Size(143, 95);
+            this.but3.Size = new System.Drawing.Size(107, 71);
             this.but3.TabIndex = 6;
             this.but3.Text = "夫";
             this.but3.UseVisualStyleBackColor = false;
-            this.but3.Click += new System.EventHandler(this.but3_Click);
+            this.but3.Click += new System.EventHandler(this.but12_Click);
             // 
             // but4
             // 
             this.but4.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.but4.Font = new System.Drawing.Font("宋体", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.but4.Location = new System.Drawing.Point(554, 485);
-            this.but4.Margin = new System.Windows.Forms.Padding(4);
+            this.but4.Location = new System.Drawing.Point(416, 364);
             this.but4.Name = "but4";
-            this.but4.Size = new System.Drawing.Size(143, 95);
+            this.but4.Size = new System.Drawing.Size(107, 71);
             this.but4.TabIndex = 7;
             this.but4.Text = "妻";
             this.but4.UseVisualStyleBackColor = false;
-            this.but4.Click += new System.EventHandler(this.but4_Click);
+            this.but4.Click += new System.EventHandler(this.but12_Click);
             // 
             // but8
             // 
             this.but8.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.but8.Font = new System.Drawing.Font("宋体", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.but8.Location = new System.Drawing.Point(554, 601);
-            this.but8.Margin = new System.Windows.Forms.Padding(4);
+            this.but8.Location = new System.Drawing.Point(416, 451);
             this.but8.Name = "but8";
-            this.but8.Size = new System.Drawing.Size(143, 95);
+            this.but8.Size = new System.Drawing.Size(107, 71);
             this.but8.TabIndex = 11;
             this.but8.Text = "弟";
             this.but8.UseVisualStyleBackColor = false;
-            this.but8.Click += new System.EventHandler(this.but8_Click);
+            this.but8.Click += new System.EventHandler(this.but12_Click);
             // 
             // but7
             // 
             this.but7.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.but7.Font = new System.Drawing.Font("宋体", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.but7.Location = new System.Drawing.Point(378, 601);
-            this.but7.Margin = new System.Windows.Forms.Padding(4);
+            this.but7.Location = new System.Drawing.Point(284, 451);
             this.but7.Name = "but7";
-            this.but7.Size = new System.Drawing.Size(143, 95);
+            this.but7.Size = new System.Drawing.Size(107, 71);
             this.but7.TabIndex = 10;
             this.but7.Text = "兄";
             this.but7.UseVisualStyleBackColor = false;
-            this.but7.Click += new System.EventHandler(this.but7_Click);
+            this.but7.Click += new System.EventHandler(this.but12_Click);
             // 
             // but6
             // 
             this.but6.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.but6.Font = new System.Drawing.Font("宋体", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.but6.Location = new System.Drawing.Point(202, 601);
-            this.but6.Margin = new System.Windows.Forms.Padding(4);
+            this.but6.Location = new System.Drawing.Point(152, 451);
             this.but6.Name = "but6";
-            this.but6.Size = new System.Drawing.Size(143, 95);
+            this.but6.Size = new System.Drawing.Size(107, 71);
             this.but6.TabIndex = 9;
             this.but6.Text = "母";
             this.but6.UseVisualStyleBackColor = false;
-            this.but6.Click += new System.EventHandler(this.but6_Click);
+            this.but6.Click += new System.EventHandler(this.but12_Click);
             // 
             // but5
             // 
             this.but5.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.but5.Font = new System.Drawing.Font("宋体", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.but5.Location = new System.Drawing.Point(32, 601);
-            this.but5.Margin = new System.Windows.Forms.Padding(4);
+            this.but5.Location = new System.Drawing.Point(24, 451);
             this.but5.Name = "but5";
-            this.but5.Size = new System.Drawing.Size(143, 95);
+            this.but5.Size = new System.Drawing.Size(107, 71);
             this.but5.TabIndex = 8;
             this.but5.Text = "父";
             this.but5.UseVisualStyleBackColor = false;
-            this.but5.Click += new System.EventHandler(this.but5_Click);
+            this.but5.Click += new System.EventHandler(this.but12_Click);
             // 
             // but14
             // 
             this.but14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.but14.Font = new System.Drawing.Font("宋体", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.but14.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.but14.Location = new System.Drawing.Point(554, 856);
-            this.but14.Margin = new System.Windows.Forms.Padding(4);
+            this.but14.Location = new System.Drawing.Point(416, 642);
             this.but14.Name = "but14";
-            this.but14.Size = new System.Drawing.Size(143, 95);
+            this.but14.Size = new System.Drawing.Size(107, 71);
             this.but14.TabIndex = 17;
             this.but14.Text = "=";
             this.but14.UseVisualStyleBackColor = false;
@@ -197,10 +188,9 @@ namespace KinshipCalculator
             // 
             this.but13.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.but13.Font = new System.Drawing.Font("宋体", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.but13.Location = new System.Drawing.Point(32, 856);
-            this.but13.Margin = new System.Windows.Forms.Padding(4);
+            this.but13.Location = new System.Drawing.Point(24, 642);
             this.but13.Name = "but13";
-            this.but13.Size = new System.Drawing.Size(489, 95);
+            this.but13.Size = new System.Drawing.Size(367, 71);
             this.but13.TabIndex = 16;
             this.but13.Text = "互查";
             this.but13.UseVisualStyleBackColor = false;
@@ -210,10 +200,9 @@ namespace KinshipCalculator
             // 
             this.but12.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.but12.Font = new System.Drawing.Font("宋体", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.but12.Location = new System.Drawing.Point(554, 725);
-            this.but12.Margin = new System.Windows.Forms.Padding(4);
+            this.but12.Location = new System.Drawing.Point(416, 544);
             this.but12.Name = "but12";
-            this.but12.Size = new System.Drawing.Size(143, 95);
+            this.but12.Size = new System.Drawing.Size(107, 71);
             this.but12.TabIndex = 15;
             this.but12.Text = "女";
             this.but12.UseVisualStyleBackColor = false;
@@ -223,62 +212,59 @@ namespace KinshipCalculator
             // 
             this.but11.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.but11.Font = new System.Drawing.Font("宋体", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.but11.Location = new System.Drawing.Point(378, 725);
-            this.but11.Margin = new System.Windows.Forms.Padding(4);
+            this.but11.Location = new System.Drawing.Point(284, 544);
             this.but11.Name = "but11";
-            this.but11.Size = new System.Drawing.Size(143, 95);
+            this.but11.Size = new System.Drawing.Size(107, 71);
             this.but11.TabIndex = 14;
             this.but11.Text = "子";
             this.but11.UseVisualStyleBackColor = false;
-            this.but11.Click += new System.EventHandler(this.but11_Click);
+            this.but11.Click += new System.EventHandler(this.but12_Click);
             // 
             // but10
             // 
             this.but10.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.but10.Font = new System.Drawing.Font("宋体", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.but10.Location = new System.Drawing.Point(202, 725);
-            this.but10.Margin = new System.Windows.Forms.Padding(4);
+            this.but10.Location = new System.Drawing.Point(152, 544);
             this.but10.Name = "but10";
-            this.but10.Size = new System.Drawing.Size(143, 95);
+            this.but10.Size = new System.Drawing.Size(107, 71);
             this.but10.TabIndex = 13;
             this.but10.Text = "妹";
             this.but10.UseVisualStyleBackColor = false;
-            this.but10.Click += new System.EventHandler(this.but10_Click);
+            this.but10.Click += new System.EventHandler(this.but12_Click);
             // 
             // but9
             // 
             this.but9.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.but9.Font = new System.Drawing.Font("宋体", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.but9.Location = new System.Drawing.Point(32, 725);
-            this.but9.Margin = new System.Windows.Forms.Padding(4);
+            this.but9.Location = new System.Drawing.Point(24, 544);
             this.but9.Name = "but9";
-            this.but9.Size = new System.Drawing.Size(143, 95);
+            this.but9.Size = new System.Drawing.Size(107, 71);
             this.but9.TabIndex = 12;
             this.but9.Text = "姐";
             this.but9.UseVisualStyleBackColor = false;
-            this.but9.Click += new System.EventHandler(this.but9_Click);
+            this.but9.Click += new System.EventHandler(this.but12_Click);
             // 
-            // label3
+            // output
             // 
-            this.label3.BackColor = System.Drawing.SystemColors.Control;
-            this.label3.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label3.ForeColor = System.Drawing.SystemColors.ControlDark;
-            this.label3.Location = new System.Drawing.Point(391, 413);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label3.Name = "label3";
-            this.label3.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.label3.Size = new System.Drawing.Size(306, 50);
-            this.label3.TabIndex = 20;
-            this.label3.Text = "label3";
-            this.label3.TextAlign = System.Drawing.ContentAlignment.BottomRight;
+            this.output.BackColor = System.Drawing.SystemColors.Control;
+            this.output.Font = new System.Drawing.Font("宋体", 18F, System.Drawing.FontStyle.Bold);
+            this.output.ForeColor = System.Drawing.SystemColors.ControlDark;
+            this.output.Location = new System.Drawing.Point(293, 310);
+            this.output.Name = "output";
+            this.output.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.output.Size = new System.Drawing.Size(230, 38);
+            this.output.TabIndex = 20;
+            this.output.Text = "我";
+            this.output.TextAlign = System.Drawing.ContentAlignment.BottomRight;
+            this.output.Click += new System.EventHandler(this.label3_Click);
             // 
-            // Form1
+            // KinshipCalculator
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 24F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(736, 1003);
-            this.Controls.Add(this.label3);
+            this.ClientSize = new System.Drawing.Size(552, 752);
+            this.Controls.Add(this.output);
             this.Controls.Add(this.but14);
             this.Controls.Add(this.but13);
             this.Controls.Add(this.but12);
@@ -293,19 +279,19 @@ namespace KinshipCalculator
             this.Controls.Add(this.but3);
             this.Controls.Add(this.but2);
             this.Controls.Add(this.but1);
-            this.Controls.Add(this.label2);
+            this.Controls.Add(this.input);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(4);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Name = "KinshipCalculator";
+            this.Text = "KinshipCalculator";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label input;
         private System.Windows.Forms.Button but1;
         private System.Windows.Forms.Button but2;
         private System.Windows.Forms.Button but3;
@@ -320,7 +306,7 @@ namespace KinshipCalculator
         private System.Windows.Forms.Button but11;
         private System.Windows.Forms.Button but10;
         private System.Windows.Forms.Button but9;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label output;
     }
 }
 
